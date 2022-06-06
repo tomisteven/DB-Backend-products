@@ -64,7 +64,7 @@ const deleteProduct = async (req, res) => {
 
         const { id } = req.params;
         const product = await Product.findById(id);
-        //await deleteImagen(product.image.public_id);
+        await deleteImagen(product.image.public_id);
         await product.remove();
         res.json({ message: 'product deleted' });
 
