@@ -35,7 +35,7 @@ app.use((0, _expressFileupload["default"])({
 app.use("/api/products", _ProductRoutes["default"]); //base de datos
 
 app.listen(process.env.port, function () {
-  console.log('Server started on port', process.env.port);
+  console.log('Server started on port', process.env.PORT);
 });
 var _default = app;
 exports["default"] = _default;

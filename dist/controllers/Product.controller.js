@@ -20,7 +20,7 @@ var _fsExtra = _interopRequireDefault(require("fs-extra"));
 //importamos base de datos
 var createProduct = /*#__PURE__*/function () {
   var _ref = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(req, res) {
-    var _req$files, _req$body, name, description, price, newProduct, result, productSaved;
+    var _req$files, _req$body, name, description, price, newProduct, result;
 
     return _regenerator["default"].wrap(function _callee$(_context) {
       while (1) {
@@ -58,23 +58,22 @@ var createProduct = /*#__PURE__*/function () {
             return newProduct.save();
 
           case 13:
-            productSaved = _context.sent;
             //ir a pagina de productos
             res.redirect('http://localhost:3000');
-            _context.next = 20;
+            _context.next = 19;
             break;
 
-          case 17:
-            _context.prev = 17;
+          case 16:
+            _context.prev = 16;
             _context.t0 = _context["catch"](0);
             console.log(_context.t0);
 
-          case 20:
+          case 19:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 17]]);
+    }, _callee, null, [[0, 16]]);
   }));
 
   return function createProduct(_x, _x2) {
