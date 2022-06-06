@@ -173,26 +173,30 @@ var deleteProduct = /*#__PURE__*/function () {
           case 4:
             product = _context4.sent;
             _context4.next = 7;
-            return product.remove();
+            return (0, _cloudinary.deleteImagen)(product.image.public_id);
 
           case 7:
+            _context4.next = 9;
+            return product.remove();
+
+          case 9:
             res.json({
               message: 'product deleted'
             });
-            _context4.next = 13;
+            _context4.next = 15;
             break;
 
-          case 10:
-            _context4.prev = 10;
+          case 12:
+            _context4.prev = 12;
             _context4.t0 = _context4["catch"](0);
             console.log(_context4.t0);
 
-          case 13:
+          case 15:
           case "end":
             return _context4.stop();
         }
       }
-    }, _callee4, null, [[0, 10]]);
+    }, _callee4, null, [[0, 12]]);
   }));
 
   return function deleteProduct(_x7, _x8) {
