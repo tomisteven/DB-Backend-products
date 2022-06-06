@@ -29,21 +29,15 @@ const createProduct = async (req, res) => {
       } 
 
 
-     const productSaved = await newProduct.save(); 
+     await newProduct.save(); 
 
      
      //ir a pagina de productos
      res.redirect('http://localhost:3000');
-     
-
-
-
     } catch (error) {
         console.log(error);
     }
 }
-
-
 
 const getProducts = async (req, res) => {
 try {
@@ -65,10 +59,6 @@ const getProduct = async (req, res) => {
     }
 }
 
-
-
-
-
 const deleteProduct = async (req, res) => {
     try {
 
@@ -82,7 +72,6 @@ const deleteProduct = async (req, res) => {
         console.log(error);
         
     }
-
 
 }
 
@@ -103,11 +92,6 @@ const editProduct = async (req, res) => {
         console.log(error);
 
     }
-
-
-
-
-    
     
 }
 
