@@ -24,9 +24,9 @@ app.use(fileUpload({
 
 //rutas de la app
 app.use("/api/products", ProductRoutes);
-
 //base de datos
 import './database.js'
+
 
 app.listen(process.env.port, () => {
     console.log('Server started on port', process.env.PORT);
