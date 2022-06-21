@@ -7,7 +7,7 @@
     "dev": "nodemon --exec npx babel-node src/index.js",
     "clean": "rm -rf dist/",
     "build": "npm run clean && mkdir dist && babel src -s -d dist",
-    "start": "node dist/index.js"
+    "start": "npm run build && node dist/index.js"
   },
   "keywords": [],
   "author": "",
