@@ -22,7 +22,7 @@ app.use(fileUpload({
   }))
 
 
-//rutas de la aplicacion
+//rutas de la app
 app.use("/api/products", ProductRoutes);
 
 //base de datos
