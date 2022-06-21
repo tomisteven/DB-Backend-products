@@ -6,9 +6,6 @@
         "@babel/plugin-transform-runtime",
         "@babel/plugin-transform-regenerator"
     
-    ],
-    "configFile": true,
-
-    "extends": "../../.babelrc" 
+    ]
 
 }
