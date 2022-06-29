@@ -5,7 +5,7 @@ import cors from 'cors';
 
 import dotenv from 'dotenv';
 
-import fileUpload from "express-fileupload";
+
 
 dotenv.config();
 
@@ -15,11 +15,6 @@ const app = express();
 //midlewares
 app.use(express.json());
 app.use(cors())
-
-app.use(fileUpload({
-    useTempFiles: true,
-    tempFileDir: 'src/temp'
-  }))
 
 
 //rutas de la app
