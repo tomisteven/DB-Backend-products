@@ -1,7 +1,7 @@
 //importamos base de datos
-import  Product  from '../models/Product.js';
+import  Product  from '../models/Product';
 
-import {uploadImage, deleteImagen} from '../cloudinary.js';
+import {uploadImage, deleteImagen} from '../cloudinary';
 import fs from 'fs-extra'
 
  
