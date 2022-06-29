@@ -18,7 +18,7 @@ app.use(cors())
 
 app.use(fileUpload({
     useTempFiles: true,
-    tempFileDir: './uploads'
+    tempFileDir: 'src/temp'
   }))
 
 
